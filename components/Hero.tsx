@@ -81,7 +81,7 @@ export default function Hero() {
         {/* Headline */}
         <motion.h1
           variants={fadeUp}
-          className="font-serif font-light text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 text-balance"
+          className="font-serif font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 text-balance"
         >
           Where Every Moment
           <br />
