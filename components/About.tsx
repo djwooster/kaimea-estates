@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const VENUE_IMAGE =
-  "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/1621270845911-EMFZ9QDTL5PW53WVSBZO/kaimea-estate-background-green.jpg";
+  "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/579714fa-1236-42bb-a447-d3b75a57438a/IMG_6367+%282%29.jpg?format=1500w";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 36 },
@@ -63,8 +63,8 @@ export default function About() {
                 Tucked along the sun-drenched shores of Kahala — just beyond
                 Waikiki — Hale Punakai is Oahu&rsquo;s most beloved hidden gem.
                 A private beachfront estate where verdant tropical gardens meet
-                sweeping Pacific Ocean vistas, offering a setting unlike anything
-                else on the island.
+                sweeping Pacific Ocean vistas, offering a setting unlike
+                anything else on the island.
               </p>
               <p>
                 Family-owned and operated by native Hawaiians, every detail of
