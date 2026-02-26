@@ -49,10 +49,7 @@ export default function Hero() {
       className="relative h-[100svh] min-h-[600px] flex items-center justify-center overflow-hidden"
     >
       {/* Parallax background */}
-      <motion.div
-        className="absolute inset-0 scale-110"
-        style={{ y: imageY }}
-      >
+      <motion.div className="absolute inset-0 scale-110" style={{ y: imageY }}>
         <img
           src={HERO_IMAGE}
           alt="Kaimea Estates — Hale Punakai beachfront estate in Kahala, Oahu"
@@ -106,12 +103,15 @@ export default function Hero() {
           variants={fadeUp}
           className="font-sans font-light text-white/80 text-base sm:text-lg max-w-xl mx-auto leading-relaxed mb-10"
         >
-          An intimate beachfront estate crafted for life&rsquo;s most
-          meaningful celebrations — weddings, gatherings, and everything in between.
+          An intimate beachfront estate crafted for life&rsquo;s most meaningful
+          celebrations — weddings, gatherings, and everything in between.
         </motion.p>
 
         {/* CTA */}
-        <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center">
+        <motion.div
+          variants={fadeUp}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
           <a
             href={BOOK_HREF}
             className="inline-block bg-gold-600 hover:bg-gold-500 text-forest-950 font-sans text-[11px] tracking-[0.3em] uppercase px-10 py-4 transition-all duration-300 hover:shadow-lg hover:shadow-gold-600/20"
@@ -128,7 +128,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll indicator */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -142,7 +142,7 @@ export default function Hero() {
           animate={{ scaleY: [1, 0.5, 1], opacity: [0.4, 0.8, 0.4] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         />
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }
