@@ -2,19 +2,20 @@
 
 import { motion } from "framer-motion";
 
-const BOOK_HREF =
-  "mailto:events@kaimeaestates.com?subject=Venue%20Inquiry%20%E2%80%93%20Let%27s%20Connect";
+import { BOOK_HREF } from "@/lib/site";
 
 const CTA_IMAGE =
   "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/a3e9fb58-630a-4843-9138-39c1ab849f36/IMG_6205+%281%29.JPG";
 
 const footerLinks = [
-  { label: "About", href: "#about" },
-  { label: "Venue", href: "#venue" },
-  { label: "Events", href: "#events" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "About", href: "/#about" },
+  { label: "Weddings", href: "/weddings" },
+  { label: "Elopements", href: "/elopements" },
+  { label: "Venue", href: "/#venue" },
+  { label: "Events", href: "/#events" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 function InstagramIcon() {
@@ -53,7 +54,7 @@ export default function Footer() {
         <div className="absolute inset-0">
           <img
             src={CTA_IMAGE}
-            alt="Hale Punakai wedding ceremony"
+            alt="Kaimea Estates wedding ceremony"
             className="w-full h-full object-cover"
             loading="lazy"
           />
@@ -114,7 +115,7 @@ export default function Footer() {
                 <span className="text-gold-400">Estates</span>
               </p>
               <p className="font-sans text-[11px] tracking-[0.25em] uppercase text-white/40 mt-1.5">
-                Hale Punakai &nbsp;·&nbsp; Kahala, Oahu
+                Honolulu &nbsp;·&nbsp; Oahu
               </p>
             </div>
 

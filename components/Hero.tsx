@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const BOOK_HREF =
-  "mailto:events@kaimeaestates.com?subject=Venue%20Inquiry%20%E2%80%93%20Let%27s%20Connect";
+import { BOOK_HREF } from "@/lib/site";
 
 const HERO_IMAGE =
   "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/1621270292039-UYJEF8W6HNYP6C3UZT3C/kaimea-estate-hero-web.jpg";
@@ -50,12 +50,13 @@ export default function Hero() {
     >
       {/* Parallax background */}
       <motion.div className="absolute inset-0 scale-110" style={{ y: imageY }}>
-        <img
+        <Image
           src={HERO_IMAGE}
-          alt="Kaimea Estates — Hale Punakai beachfront estate in Kahala, Oahu"
-          className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
+          alt="Kaimea Estates, a beachfront estate in Honolulu, Oahu"
+          className="object-cover"
+          fill
+          priority
+          sizes="100vw"
         />
       </motion.div>
 
@@ -75,18 +76,15 @@ export default function Hero() {
           variants={fadeUp}
           className="label-accent text-gold-400/90 mb-7 tracking-[0.4em]"
         >
-          Kahala &nbsp;·&nbsp; Oahu &nbsp;·&nbsp; Hawai&lsquo;i
+          Honolulu &nbsp;·&nbsp; Oahu &nbsp;·&nbsp; Hawai&lsquo;i
         </motion.p>
 
-        {/* Headline */}
-        <motion.h1
-          variants={fadeUp}
-          className="font-serif font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 text-balance"
-        >
+        {/* Headline — rendered visible on first paint; it's the mobile LCP element */}
+        <h1 className="font-serif font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 text-balance">
           Where Every Moment
           <br />
           <em className="not-italic text-gold-300">Becomes Forever</em>
-        </motion.h1>
+        </h1>
 
         {/* Gold rule */}
         <motion.div

@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 
-const BOOK_HREF =
-  "mailto:events@kaimeaestates.com?subject=Venue%20Inquiry%20%E2%80%93%20Let%27s%20Connect";
+import { BOOK_HREF } from "@/lib/site";
 
 const events = [
   {
     title: "Weddings",
+    href: "/weddings",
     subtitle: "Ceremonies & Receptions",
     description:
-      "Exchange your vows with the Pacific Ocean as your witness. From intimate elopements to full receptions under the stars, Hale Punakai is the setting for your love story.",
+      "Exchange your vows with the Pacific Ocean as your witness. From intimate elopements to full receptions under the stars, Kaimea Estates is the setting for your love story.",
     image:
       "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/73e0150a-1b20-4fce-8f9c-2f9608e96d64/Brit+Image+%282%29.jpg",
     alt: "Bride and groom on the lush lawn at Kaimea Estates",
@@ -94,6 +94,14 @@ export default function EventTypes() {
                 <p className="font-sans text-white/60 text-sm leading-relaxed font-light mb-6">
                   {event.description}
                 </p>
+                {event.href && (
+                  <a
+                    href={event.href}
+                    className="inline-flex items-center gap-2 font-sans text-[11px] tracking-[0.25em] uppercase text-white/70 hover:text-white transition-colors duration-200 mr-8"
+                  >
+                    Wedding Details
+                  </a>
+                )}
                 <a
                   href={BOOK_HREF}
                   className="inline-flex items-center gap-2 font-sans text-[11px] tracking-[0.25em] uppercase text-gold-400 hover:text-gold-300 transition-colors duration-200 group/link"

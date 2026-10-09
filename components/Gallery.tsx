@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const images = [
   {
     src: "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/775d86b4-38c7-4280-85e7-38322e83ff31/Brit+Image+2+%281%29.JPG",
-    alt: "Ocean view reception at Hale Punakai",
+    alt: "Ocean view reception at Kaimea Estates",
     span: "lg:col-span-2 lg:row-span-2",
     aspect: "aspect-[4/3] lg:aspect-auto lg:h-full",
   },
@@ -17,7 +17,7 @@ const images = [
   },
   {
     src: "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/2e018c5a-c5c1-4690-a7b2-4bafc38eb3ba/IMG_6213.JPG",
-    alt: "Elegant tablescape at Hale Punakai",
+    alt: "Elegant tablescape at Kaimea Estates",
     span: "",
     aspect: "aspect-[3/4]",
   },

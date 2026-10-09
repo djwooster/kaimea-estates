@@ -50,18 +50,15 @@ export default function About() {
             <p className="label-accent text-gold-400 mb-5">The Estate</p>
 
             <h2 className="font-serif font-light text-4xl sm:text-5xl lg:text-6xl leading-tight mb-3">
-              Hale Punakai
-            </h2>
-            <p className="font-serif italic text-gold-300 text-xl mb-8 tracking-wide">
               Kaimea Estates
-            </p>
+            </h2>
 
             <div className="h-px w-12 bg-gold-500/50 mb-8" />
 
             <div className="space-y-5 font-sans font-light text-white/75 text-base leading-relaxed">
               <p>
-                Tucked along the sun-drenched shores of Kahala — just beyond
-                Waikiki — Hale Punakai is Oahu&rsquo;s most beloved hidden gem.
+                Tucked along the sun-drenched shores of Honolulu — just beyond
+                Waikiki — Kaimea Estates is Oahu&rsquo;s most beloved hidden gem.
                 A private beachfront estate where verdant tropical gardens meet
                 sweeping Pacific Ocean vistas, offering a setting unlike
                 anything else on the island.
@@ -78,7 +75,7 @@ export default function About() {
               <p>
                 Whether you&rsquo;re envisioning barefoot vows at the
                 water&rsquo;s edge or an elegant dinner under a canopy of string
-                lights, Hale Punakai transforms every occasion into something
+                lights, Kaimea Estates transforms every occasion into something
                 unforgettable.
               </p>
             </div>
@@ -117,7 +114,7 @@ export default function About() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={VENUE_IMAGE}
-                alt="Hale Punakai — lush tropical gardens and ocean view at Kaimea Estates"
+                alt="Lush tropical gardens and ocean view at Kaimea Estates"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

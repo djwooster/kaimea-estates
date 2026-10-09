@@ -2,19 +2,16 @@
 
 import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { BOOK_HREF } from "@/lib/site";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Venue", href: "#venue" },
-  { label: "Events", href: "#events" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Weddings", href: "/weddings" },
+  { label: "Elopements", href: "/elopements" },
+  { label: "Venue", href: "/#venue" },
+  { label: "Events", href: "/#events" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "FAQ", href: "/#faq" },
 ];
-
-// Replace with your Calendly or booking link
-const BOOK_HREF =
-  "mailto:events@kaimeaestates.com?subject=Venue%20Inquiry%20%E2%80%93%20Let%27s%20Connect";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +35,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         {/* Logo */}
-        <a href="#" aria-label="Kaimea Estates home">
+        <a href="/" aria-label="Kaimea Estates home">
           <span className="font-serif text-white text-lg tracking-[0.25em] uppercase font-light leading-none">
             Kaimea{" "}
             <span className="text-gold-400">Estates</span>

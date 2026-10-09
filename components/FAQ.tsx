@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "How many guests does Hale Punakai accommodate?",
+    question: "How many guests does Kaimea Estates accommodate?",
     answer:
-      "Hale Punakai is an intimate beachfront estate designed for meaningful gatherings rather than large-scale ballroom events. Our setting is ideally suited for ceremonies and receptions of up to 75 guests. Reach out and we can discuss what layout works best for your vision.",
+      "Kaimea Estates is an intimate beachfront estate designed for meaningful gatherings rather than large-scale ballroom events. Our setting is ideally suited for ceremonies and receptions of up to 60 guests. Reach out and we can discuss what layout works best for your vision.",
   },
   {
     question: "What's included with the venue rental?",
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Do you offer outdoor ceremonies?",
     answer:
-      "Yes — and our outdoor spaces are the heart of what makes Hale Punakai so extraordinary. We offer oceanfront ceremony setups with the Pacific as your backdrop, garden settings within our lush tropical landscape, and poolside reception areas. We'll help you design a layout that brings your vision to life.",
+      "Yes — and our outdoor spaces are the heart of what makes Kaimea Estates so extraordinary. We offer oceanfront ceremony setups with the Pacific as your backdrop, garden settings within our lush tropical landscape, and poolside reception areas. We'll help you design a layout that brings your vision to life.",
   },
   {
     question: "Is catering provided?",
