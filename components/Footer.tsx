@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import { BOOK_HREF } from "@/lib/site";
+import InquiryForm from "@/components/InquiryForm";
 
 const CTA_IMAGE =
   "https://images.squarespace-cdn.com/content/v1/60a29d738b4b396e23140532/a3e9fb58-630a-4843-9138-39c1ab849f36/IMG_6205+%281%29.JPG";
@@ -48,8 +48,8 @@ function MailIcon() {
 export default function Footer() {
   return (
     <>
-      {/* Full-width CTA band */}
-      <section className="relative overflow-hidden py-32 lg:py-44">
+      {/* Inquiry band — qualifying form on every page */}
+      <section id="inquire" className="relative overflow-hidden py-24 lg:py-36">
         {/* Background image */}
         <div className="absolute inset-0">
           <img
@@ -58,50 +58,44 @@ export default function Footer() {
             className="w-full h-full object-cover"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-forest-950/75" />
+          <div className="absolute inset-0 bg-forest-950/80" />
         </div>
 
-        <motion.div
-          className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center"
-          initial={{ opacity: 0, y: 32 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
-          viewport={{ once: true, margin: "-80px" }}
-        >
-          <p className="label-accent text-gold-400 mb-6">Ready to Begin?</p>
-          <h2 className="font-serif font-light text-4xl sm:text-5xl lg:text-7xl text-white leading-tight mb-5">
-            Begin Your Story
-            <br />
-            <em className="text-gold-300">Here</em>
-          </h2>
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="h-px w-12 bg-gold-500/40" />
-            <div className="w-1 h-1 rotate-45 bg-gold-500/50" />
-            <div className="h-px w-12 bg-gold-500/40" />
-          </div>
-          <p className="font-sans font-light text-white/70 text-base max-w-lg mx-auto mb-10 leading-relaxed">
-            Every great celebration starts with a conversation. Let&rsquo;s talk
-            about your vision for the most meaningful day of your life.
-          </p>
-          <motion.a
-            href={BOOK_HREF}
-            className="inline-block bg-gold-600 hover:bg-gold-500 text-forest-950 font-sans text-[11px] tracking-[0.35em] uppercase px-12 py-4 transition-all duration-300 hover:shadow-xl hover:shadow-gold-600/25"
-            whileHover={{ y: -2 }}
-            whileTap={{ y: 0 }}
-            transition={{ duration: 0.2 }}
+        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
+            viewport={{ once: true, margin: "-80px" }}
           >
-            Book a Call
-          </motion.a>
-          <p className="mt-5 font-sans text-xs text-white/40 tracking-wide">
-            or email us at{" "}
+            <p className="label-accent text-gold-400 mb-6">Ready to Begin?</p>
+            <h2 className="font-serif font-light text-4xl sm:text-5xl lg:text-7xl text-white leading-tight mb-5">
+              Begin Your Story <em className="text-gold-300">Here</em>
+            </h2>
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="h-px w-12 bg-gold-500/40" />
+              <div className="w-1 h-1 rotate-45 bg-gold-500/50" />
+              <div className="h-px w-12 bg-gold-500/40" />
+            </div>
+            <p className="font-sans font-light text-white/70 text-base max-w-lg mx-auto leading-relaxed">
+              Tell us a little about your celebration and we&rsquo;ll check availability for your
+              date. It takes about two minutes.
+            </p>
+          </motion.div>
+
+          <InquiryForm />
+
+          <p className="mt-6 text-center font-sans text-xs text-white/50 tracking-wide">
+            Prefer email? Write to{" "}
             <a
               href="mailto:events@kaimeaestates.com"
-              className="text-gold-400/70 hover:text-gold-400 underline underline-offset-2 transition-colors"
+              className="text-gold-400/80 hover:text-gold-400 underline underline-offset-2 transition-colors"
             >
               events@kaimeaestates.com
             </a>
           </p>
-        </motion.div>
+        </div>
       </section>
 
       {/* Footer */}
